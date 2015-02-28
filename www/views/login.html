@@ -1,0 +1,41 @@
+<ion-header-bar class="bar-positive">
+    <div>
+
+        <h1 class="title">Login Page</h1>
+    </div>
+</ion-header-bar>
+
+<ion-content style="margin-top: 20%">
+
+    <div class="row">
+        <div class="col">
+            <p>Enter Username:</p>
+        </div>
+        <div class="col">
+            <input type="text" placeholder="Username..." ng-model="$parent.userName" required>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <p>Enter Password:</p>
+        </div>
+        <div class="col">
+            <input type="password" placeholder="Password..." ng-model="$parent.userPassword" required>
+        </div>
+    </div>
+
+    <div class="row row-center">
+        <div class="col buttons button-full">
+            <button class="button" ng-click="login()">Login</button>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col buttons button-full">
+            <button class="button" ui-sref="signup">SignUp</button>
+        </div>
+    </div>
+
+</ion-content>
